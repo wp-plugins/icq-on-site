@@ -3,7 +3,7 @@
  * Plugin Name: ICQ On-Site
  * Plugin URI: http://wordpress.org/extend/plugins/icq-on-site/
  * Description: ICQ On-Site is a fast, high performance and most user-friendly application. A Live chat solution that will increase engagement and the exposure of your site. Let your users chat with their friends and share your pages with them.
- * Version: Beta1.2
+ * Version: Beta1.3
  * Author: Keren Ramot
  */
 
