@@ -1,7 +1,7 @@
 ICQ On-Site
 Contributors: Keren Ramot
 Donate link: NA
-Tags: Beta 0.1
+Tags: Beta0.2
 Requires at least: 2.0.2
 Tested up to: 2.1
 Stable tag: Beta0.2
