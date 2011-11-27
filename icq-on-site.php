@@ -25,7 +25,7 @@ function icq_create_menu() {
 	add_action( 'admin_init', 'register_mysettings' );
 }
 
-
+ 
 function register_mysettings() {
 	//register our settings
 	register_setting( 'icq-settings-group', 'icq_option_language' );
