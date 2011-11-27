@@ -1,15 +1,15 @@
 <?php
 /**
  * Plugin Name: ICQ On-Site
- * Plugin URI: TBD
+ * Plugin URI: http://wordpress.org/extend/plugins/icq-on-site/
  * Description: ICQ On-Site is a fast, high performance and most user-friendly application. A Live chat solution that will increase engagement and the exposure of your site. Let your users chat with their friends and share your pages with them.
- * Version: Beta
+ * Version: Beta 0.1
  * Author: Keren Ramot
  */
 
 function icqonsite_js() {
 	$lang = get_option('icq_option_language') ? get_option('icq_option_language') : 'en';
-	echo '<script src="http://c.icq.com/siteim/icqbar/js/partners/initbar_'.$lang.'.js" language="javascript" type="text/javascript"></script>';
+	echo '<script src="http://c.icq.com/siteim/icqbar/js/partners/initbar_'.$lang.'.js" language="javascript" type="text/javascript"  charset="utf-8"></script>';
 }
 
 add_action( 'wp_head', 'icqonsite_js' );
@@ -31,9 +31,10 @@ function register_mysettings() {
 	register_setting( 'icq-settings-group', 'icq_option_language' );
 }
 
+
 function baw_settings_page() {
 	$selected_option = get_option('icq_option_language') ? get_option('icq_option_language') : 'en';
-	$url = "http://www.icq.com/siteim/icqbar/js/partners/data/supported_langs.json";
+	$url = "http://www.icq.com/siteim/icqbar/js/partners/json/supported_langs.json";
 	$jsonString = file_get_contents($url);
 	$decoded = json_decode($jsonString);
 	$html_lang_options = '';
@@ -78,5 +79,6 @@ function baw_settings_page() {
 		</script>
 	</div>
 <?php }
+
 
 
